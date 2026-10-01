@@ -1,0 +1,366 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    animation: bgcolor 12s ease-in-out infinite;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.whole-area{
+    padding: 40px 100px;
+}
+
+.divider {
+  width: 100%;                      /* Spans across the page width */
+  height: 2px;                      /* Controls the thickness of the line */
+  background-color: #333333;        /* A sleek, dark charcoal line color */
+  margin: 60px 0;                   /* Adds 60px of spacing on the top and bottom */
+}
+
+/*=======================
+   HEADER SECTION
+  =======================*/
+.nav-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: red;
+    padding: 40px 15px;
+}
+
+.logo-name{
+    font-size: 28px;
+}
+
+.nav-bar{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-btn{
+    transition: 0.3s ease;
+    text-decoration: none ;
+    color: inherit;
+    padding: 8px;
+    font-size: 19px;
+}
+
+.nav-btn:hover{
+    color: rgb(255, 251, 0);
+    border-bottom: 1px solid rgb(255, 251, 0);
+    cursor: pointer;
+}
+
+/*================================
+   HERO SECTION
+  ================================*/
+.hero{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    align-items: center;
+}
+
+.hero-info{
+    display: flex;
+    flex-direction: column;
+    line-height: 1cm;
+    font-size: 20px;
+}
+
+.hero-info h2{
+    font-size: 30px;
+}
+
+.sneaker-pic{
+    border-radius: 20px;
+    max-height: 400px;
+}
+
+.btn-area{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin: 8px;
+}
+
+.secure-btn{
+    background-color: #30343a;
+    padding: 15px;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 0 0 20px gray ;
+    font-size: 18px;
+    width: auto;
+}
+
+.btn-side-link{
+    transition: 0.3s ease;
+    text-decoration: none ;
+    color: inherit;
+    font-size: 17px;
+    padding: 0;
+}
+
+.btn-side-link:hover{
+    color: rgb(255, 251, 0);
+    text-decoration: underline rgb(255, 251, 0);
+    cursor: pointer;
+}
+
+/*=============================
+   FEATURE SECTION
+  =============================*/
+.features{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.features-third{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.features article{
+    background-color: black;
+    width: auto;
+    padding: 40px;
+    border-radius: 20px;
+    line-height: 1cm;
+}
+
+.features-third article{
+    background-color: black;
+    width: auto;
+    padding: 40px;
+    border-radius: 20px;
+    line-height: 1cm;
+}
+
+.features h3{
+    font-size: 28px;
+}
+
+.features-third h3{
+    font-size: 28px;
+}
+
+.features p{
+    font-size: 19px;
+}
+
+.features-third p{
+    font-size: 19px;
+}
+
+.bi.bi-cpu, .bi.bi-lightning-charge, .bi.bi-bezier2{
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: red;
+    
+}
+
+/*=============================
+  TECH SPEC SECTION
+  =============================*/
+.tech-specs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.tech-specs article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: #df00df;
+    padding: 40px;
+    max-width: 600px;
+    min-height: 250px;
+    min-width: 150px;
+    gap: 10px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 9px;
+}
+
+.tech-specs h3{
+    font-size: 28px;
+}
+
+.tech-specs {
+    font-size: 19px;
+}
+
+/*========================
+   REVIEWS
+  ========================*/
+.reviews{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.reviews article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: rgb(124, 105, 80);
+    border-radius: 20px;
+    padding: 30px;
+    border: 0;
+}
+
+.reviews p{
+    font-size: 19px;
+}
+
+.reviews img{
+    width: 160px;
+    height: 170px;
+    border-radius: 50%;
+     border: 4px solid brown;
+}
+
+.author{
+    color: black;
+    margin-top: 9px;
+    margin-left: 65%;
+}
+.tech-specs-head, .reviews-head{
+    font-size: 30px;
+}
+
+/*===========================
+  BUY NOW SECTION
+  ===========================*/
+.buy-now{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1cm;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    font-size: 19px;
+}
+
+.price{
+    color: red;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.buy-now h2{
+    font-size: 30px;
+}
+
+.batch-01-btn{
+    animation: buttonpulse 3s ease-in-out infinite;
+    background-color: green;
+    color: whitesmoke;
+    padding: 20px 15px;
+    border-radius: 20px;
+    border: 0;
+    width: auto;
+    font-size: 17px;
+    margin-top: 6px;
+}
+
+
+/*================================
+  KEYFRAME FOR BACKGROUND
+  ================================*/
+@keyframes bgcolor{
+  0% {
+    background-color: #574a4a;
+  }
+  33% {
+    background-color: #6a3880;
+  }
+  66% {
+    background-color: #26a09a;
+  }
+  100% {
+    background-color: #574a4a; /* Must match 0% for a smooth loop */
+  }
+}
+
+/*==============================
+  KEYFRAME FOR BATCH BTN
+  ==============================*/
+@keyframes buttonpulse{
+    0% {
+    transform: scale(1); /* Normal size */
+  }
+  50% {
+    transform: scale(1.05); /* Grows 5% bigger */
+  }
+  100% {
+    transform: scale(1); /* Shrinks back down */
+  }
+}
+
+@media (max-width: 740px){
+    
+    /* 1. Remove the huge desktop padding around the screen */
+    body {
+        padding: 15px;
+    }
+
+    /* 2. Scale down the outer container spacing */
+    .whole-area {
+        padding: 25px 20px;
+    }
+
+    /* 3. Stack the Navbar vertically */
+    .nav-area {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    /* 4. Allow nav links to wrap neatly on mobile screen widths */
+    .nav-bars {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    /*for the pic and text to turn to column*/
+    .hero {
+       grid-template-columns: 1fr;
+    }
+
+    /*to turn the tech cards to columns*/
+    .tech-specs{
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/*to turn the features card to columns*/
+.features{
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+}
