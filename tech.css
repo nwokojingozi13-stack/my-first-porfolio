@@ -101,6 +101,17 @@ html {
     box-shadow: 0 0 20px gray ;
     font-size: 18px;
     width: auto;
+    color: #ffffff; 
+    transition: 0.2s ease;
+}
+
+.secure-btn:hover{
+    background-color: #ffffff;
+    color: black;
+}
+
+.secure-btn:active{
+    transform: scale(0.96);
 }
 
 .btn-side-link{
