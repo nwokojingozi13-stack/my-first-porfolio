@@ -393,3 +393,13 @@ html {
 .buy-now{
     width: 100%;
 }
+
+.sneaker-pic{
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.author{
+    margin: 0;
+}
