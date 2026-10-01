@@ -362,12 +362,14 @@ html {
     .features {
         grid-template-columns: 1fr;
         gap: 20px;
+        width: 100%;
     }
 
     /* 8. Force tech specs grid into a single column stack */
     .tech-specs {
         grid-template-columns: 1fr;
         gap: 20px;
+        width: 100%;
     }
 
     /* 9. Make sure all boxes dynamically size their text bounds */
@@ -378,4 +380,16 @@ html {
         height: auto; /* Lets the boxes expand downwards naturally as text wraps */
         padding: 30px 20px;
     }
+
+    .reviews article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    }
+}
+
+.buy-now{
+    width: 100%;
 }
