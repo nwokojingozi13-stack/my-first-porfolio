@@ -324,12 +324,12 @@ html {
     
     /* 1. Remove the huge desktop padding around the screen */
     body {
-        padding: 15px;
+        padding: 10px;
     }
 
-    /* 2. Scale down the outer container spacing */
+    /* 2. Overhaul the padding so boxes have room to stretch on phone screens */
     .whole-area {
-        padding: 25px 20px;
+        padding: 20px 10px !important; /* Added !important to smash the desktop 100px padding */
     }
 
     /* 3. Stack the Navbar vertically */
@@ -337,30 +337,45 @@ html {
         flex-direction: column;
         gap: 15px;
         text-align: center;
+        padding: 20px 10px;
     }
 
     /* 4. Allow nav links to wrap neatly on mobile screen widths */
-    .nav-bars {
+    .nav-bar { /* Fixed: Removed the 's' to sync with your class name */
         flex-wrap: wrap;
         justify-content: center;
         gap: 12px;
     }
 
-    /*for the pic and text to turn to column*/
+    /* 5. Turn the hero text and picture into a single vertical row layout */
     .hero {
        grid-template-columns: 1fr;
+       text-align: center;
     }
 
-    /*to turn the tech cards to columns*/
-    .tech-specs{
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
+    /* 6. Center your hero button area on mobile */
+    .btn-area {
+        justify-content: center;
+    }
 
-/*to turn the features card to columns*/
-.features{
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
+    /* 7. Force features grid into a single column stack */
+    .features {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 
+    /* 8. Force tech specs grid into a single column stack */
+    .tech-specs {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* 9. Make sure all boxes dynamically size their text bounds */
+    .features article,
+    .tech-specs article,
+    .features-third article {
+        width: 100%;
+        height: auto; /* Lets the boxes expand downwards naturally as text wraps */
+        padding: 30px 20px;
+    }
 }
